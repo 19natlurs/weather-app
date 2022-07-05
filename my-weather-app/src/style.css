@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter';
+    height: 100vh;
+    /* border: 1px solid red; */
+    background-color: #282D35;
+
+}
+
+header {
+    background-color: #21222A;
+    color: #61DAFB;
+    height: 10vh;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header>i {
+    color: #61DAFB;
+
+}
+
+.form {
+    /* border: 1px solid green; */
+    width: 80%;
+    margin: auto;
+    position: relative;
+    margin-top: 3%;
+
+}
+
+input {
+
+    padding: 2% 15%;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+
+
+}
+
+.search {
+    position: absolute;
+    right: 2%;
+    top: 35%;
+    color: #21222A;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid greenyellow; */
+    height: 70vh;
+
+}
+
+
+.info {
+
+    /* border: 1px solid red; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info>h1 {
+    font-size: 900%;
+    color: white;
+}
+
+.info>h3 {
+    font-size: 300%;
+    color: white;
+}
+
+.info>h6 {
+    font-size: 150%;
+    color: white;
+    margin-top: 5%;
+}
+
+.graphics {
+    /* border: 1px solid green; */
+    /* position: absolute; */
+
+    width: 50%;
+
+}
+
+.img {
+    /* border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-sun {
+    font-size: 2000%;
+    color: white;
+    animation: fade-in 5s;
+}
+
+.fa-cloud-moon-rain {
+    font-size: 2000%;
+    color: white;
+    display: block;
+    animation: fade-in 5s;
+}
+
+.fa-snowflake {
+    font-size: 2000%;
+    color: white;
+    display: block;
+    animation: fade-in 5s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+@media(max-width:500px) {
+
+    body {
+        height: 70vh;
+    }
+
+    .form {
+        margin-top: 10%;
+
+    }
+
+    .total {
+        height: 40vh;
+        justify-content: flex-end;
+    }
+
+    .info {
+        justify-content: flex-start;
+        margin-top: 20%;
+        height: 60%;
+    }
+
+    .graphics {
+
+        justify-content: flex-start;
+        margin-top: 15%;
+        height: 60%;
+
+    }
+
+    .info>h1 {
+        font-size: 350%;
+        color: white;
+    }
+
+    .info>h3 {
+        font-size: 200%;
+        color: white;
+    }
+
+    .info>h6 {
+        font-size: 80%;
+        color: white;
+        margin-top: 5%;
+    }
+
+
+
+    .fa-sun {
+        font-size: 1000%;
+        color: white;
+    }
+
+    .fa-cloud-moon-rain {
+        font-size: 1000%;
+        color: white;
+        display: block;
+    }
+
+    .fa-snow-flake {
+        font-size: 1000%;
+        color: white;
+        display: block;
+    }
+}
