@@ -6,7 +6,7 @@ export default function Content({ info }) {
 
 
     function img(temp) {
-        if (temp == "X") return "Search a location for display"
+        if (temp == "X") return <h2 style={{ color: "white" }}>Search a location for display</h2>
         if (temp <= 10) {
 
             return <i className="fa-solid fa-snowflake"></i>
